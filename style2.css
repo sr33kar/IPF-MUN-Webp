@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
+@font-face{
+	font-family: 'LemonMilk';
+	src: url("fonts/LemonMilklight.otf");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family: 'Basicaline';
+	src: url("fonts/Basicaline.otf");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family: 'Corbel';
+	src: url("fonts/Corbel.ttf");
+	font-weight:normal;
+	font-style:normal;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: 'LemonMilk','PT Sans Narrow', sans-serif;
+	animation-delay:4s;
+	animation:change 3s ease-in-out;
+	background-color:#ccc;
+	
+}
+@keyframes change
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity:100;
+	}
+}
+
+ .main
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	overflow:hidden;
+	background-image:url("bg2.jpg");
+	background-size:cover;
+	background-color:#ccc;
+}
+
+.main2
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	overflow:hidden;
+	background-image:url("bg2.jpg");
+	background-size:cover;
+	background-color:#ccc;
+	
+}
+.header img
+{
+	display:none;
+	
+}
+
+.bannerText
+{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+	max-width: 1000px;
+	margin-right:330px;
+}
+.bannerText h2,
+.bannerText h3
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	transform-origin: left;
+	text-transform: uppercase;
+	transform: scaleX(0);
+	animation: revealTextReverse 1s ease-in-out forwards;
+}
+.bannerText h2
+{
+	font-size: 5em;
+	animation-delay: 2s;
+}
+.bannerText h3
+{
+	font-size: 3em;
+	animation-delay: 0.25s;
+
+}
+.bannerText h2:before,
+.bannerText h3:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	transform-origin: right;
+	animation: revealText 2s ease-in-out forwards;
+	animation-delay: 0.25s;
+}
+.bannerText h3:before
+{
+	animation-delay: 1s;
+}
+@keyframes revealText
+{
+	0%
+	{
+		transform: scaleX(1);
+	}
+	100%
+	{
+		transform: scaleX(0);
+	}
+}
+@keyframes revealTextReverse
+{
+	0%
+	{
+		transform: scaleX(0);
+	}
+	100%
+	{
+		transform: scaleX(1);
+	}
+}
+.bannerText p
+{
+	opacity: 0;
+	font-weight: 600;
+	font-size: 1.2em;
+	font-family:Corbel;
+	animation: fadeIn 1s linear forwards;
+	animation-delay: 0.5s;
+
+	
+}
+@keyframes fadeIn
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+.bannerText a
+{
+	opacity: 0;
+	display: inline-block;
+	margin: 20px 0 0;
+	padding: 10px 20px;
+	
+	color: #000;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	animation: fadeInBottom 0.5s linear forwards;
+	animation-delay: 0.5s;
+}
+@keyframes fadeInBottom
+{
+	0%
+	{
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	100%
+	{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+.bulb
+{
+	opacity: 0;
+	height:30vh;
+	width:30vh;
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+	animation: fadeIn 1s linear forwards;
+	animation-delay: 1s;
+	z-index: 100;
+}
+.bulb2
+{
+	opacity: 0;
+	height:35.859vh;
+	width:30vh;
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+	animation: fadeIn 1s linear forwards;
+	animation-delay: 1s;
+	z-index: 100;
+}
+.sci
+{
+	position: absolute;
+	bottom: 15px;
+	right: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.sci li
+{
+	opacity: 0;
+	list-style: none;
+	padding: 10px 0;
+	text-align: center;
+	animation: fadeInBottom 0.5s linear forwards;
+}
+.header ul li:nth-child(1),
+.sci li:nth-child(1)
+{
+	animation-delay: 0s;
+}
+.header ul li:nth-child(2),
+.sci li:nth-child(2)
+{
+	animation-delay: 0s;
+}
+.header ul li:nth-child(3),
+.sci li:nth-child(3)
+{
+	animation-delay: 0s;
+}
+.header ul li:nth-child(4),
+.sci li:nth-child(4)
+{
+	animation-delay: 0s;
+}
+.header ul li:nth-child(5),
+.sci li:nth-child(5)
+{
+	animation-delay: 0s;
+}
+.header ul li:nth-child(6),
+.sci li:nth-child(6)
+{
+	animation-delay: 0s;
+}
+.sci li a
+{
+	font-size: 1.2em;
+	color: #fff;
+	right:50%;
+}
+.header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding: 0 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	
+	margin-left:200px;
+}
+
+.header ul
+{
+	margin-top: 30px;
+	padding: 0;
+	z-index: 100;
+	display: flex;
+}
+.header ul li
+{
+	opacity: 100%;
+	list-style: none;
+	margin: 0 10px;
+	;
+}
+.header ul li:last-child
+{
+	margin-right: 0;
+}
+.agenda{
+	font-size:1.2em;
+}
+.header ul li a
+{
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight:700;
+	color: #000;
+	padding: 2px 5px;
+	letter-spacing: 2px;
+	border:4px ridge transparent;
+}
+.header ul li a.active,
+
+.header ul li a:hover
+{
+	background:#fff;
+	color: #000;
+	border-left:4px ridge red;
+}
+
+
+@keyframes fadeInRight
+{
+	0%
+	{
+		transform: translateX(150px);
+		opacity: 0;
+	}
+	100%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.bannerText .extra{
+	font-family:Corbel;
+}
+.bannerText a:before
+{
+	content:'';
+	position:absolute;
+	top:2px;
+	left:2px;
+	bottom:2px;
+	width:50%;
+	background:rgba(255,255,255,0.05)
+
+}
+.bannerText a span:nth-child(1)
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:2px;
+	background:linear-gradient(to right, #0c002b,#1779ff);
+}
+.bannerText a span:nth-child(2)
+{
+	position:absolute;
+	top:0;
+	right:0;
+	width:2px;
+	height:100%;
+	background:linear-gradient(to bottom, #0c002b,#1779ff);
+}
+.bannerText a span:nth-child(3)
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:2px;
+	background:linear-gradient(to left, #0c002b,#1779ff);
+}
+.bannerText a span:nth-child(4)
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:2px;
+	height:100%;
+	background:linear-gradient(to top, #0c002b,#1779ff);
+}
+.button{
+	display:none;
+}
+img{
+		display:block;
+		z-index:+1;
+		
+	}
+	.ipflogo{
+		position:absolute;
+		top:5%;
+		left:10%;
+		height:100px;
+		width:58.34px;
+	}
+	.nitcmun_logo{
+		
+		
+		position:absolute;
+		left:10%;
+		top:78%;
+		height:100px;
+		width:100px;
+	}
+/*---------------*/
+@media(min-width:721px)
+{
+	.bannerText{
+		color:white;
+	}
+	.bannerText a{
+		color:white;
+	}
+	#menu img
+{
+	width:80px;
+	height:120px;
+	margin-top:20px;
+	/*margin-left:100px;*/
+	
+}
+	#menu ul li:nth-child(1),
+.sci li:nth-child(1)
+{
+	animation-delay: 2s;
+}
+#menu ul li:nth-child(2),
+.sci li:nth-child(2)
+{
+	animation-delay: 2.25s;
+}
+#menu ul li:nth-child(3),
+.sci li:nth-child(3)
+{
+	animation-delay: 2.5s;
+}
+#menu ul li:nth-child(4),
+.sci li:nth-child(4)
+{
+	animation-delay: 2.75s;
+}
+#menu ul li:nth-child(5),
+.sci li:nth-child(5)
+{
+	animation-delay: 3s;
+}
+#menu ul li:nth-child(6),
+.sci li:nth-child(6)
+{
+	animation-delay: 3.25s;
+}
+	#menu
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding: 0 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin-left:200px;
+}
+
+
+#menu ul
+{
+	margin-top: 30px;
+	padding: 0;
+	z-index: 100;
+	display: flex;
+	position:fixed;
+}
+#menu ul li
+{
+	opacity: 0;
+	list-style: none;
+	margin: 0 10px;
+	animation: fadeInRight 0.5s linear forwards;
+	
+	
+}
+#menu ul li:last-child
+{
+	margin-right: 0;
+}
+#menu ul li a
+{
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight:700;
+	color: #fff;
+	padding: 4px 8px;
+	letter-spacing: 2px;
+	border:4px ridge transparent;
+}
+#menu ul li a.active,
+
+#menu ul li a:hover
+{
+	background:#fff;
+	color: #000;
+	border-left:4px ridge red;
+}
+.sci{
+	z-index: +1;
+}
+.sci i{
+	transform:scale(1.4);
+}
+	
+}
+@media(max-width:720px)
+{
+	.bulb{
+		height:0px;
+		width:0px;
+	}
+	.bulb2{
+		height:0px;
+		width:0px;
+	}
+	.bannerText{
+		margin-right:20px;
+	}
+	.header ul{
+		display:none;
+	}
+	.button{
+		
+	
+		
+	}
+	.button:focus{
+		
+	}
+}
+@media screen and (max-width:720px)
+{
+	img{
+		display:block;
+		z-index:+1;
+		
+	}
+	.ipflogo{
+		display:none;
+	}
+	.nitcmun_logo{
+		display:none;
+	}
+	body{
+		font-size:0.8em;
+		animation-delay:4s;
+	animation:change 1.5s ease-in-out;
+	}
+	@keyframes change
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity:100;
+	}
+}
+	.bannerText{
+		font-size:0.8em;
+		margin-left:10px;
+		text-align:center;
+		
+	}
+	.bannerText{
+		color:white;
+	}
+	.bannerText a{
+		color:white;
+	}
+	.bannerText p{
+		font-family:Corbel;
+	}
+	#menu {
+	display:block;
+		position:absolute;
+		top:10%;
+		right:50%;	
+		z-index:+1;
+	}
+	#toggle {
+		display: block;
+		width: 28px;
+		height: 30px;
+		margin: 30px auto 10px;
+		position:absolute;
+		top:5%;
+		right:37%;
+		
+		}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#toggle.on + #menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#toggle{
+	-webkit-animation-duration: 2s;
+            animation-duration: 2s; 
+	animation-delay:2s;
+	animation-name:bounce;
+  
+ 
+ 
+  
+ 
+}
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-30px);} 
+   60% {transform: translateY(-15px);} 
+}
+#menu {
+  position: absolute;
+  top:18%;
+		right:11%;
+  color: #999;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  font-family: LemonMilk,"Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+ 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s;
+}
+#menu:after {
+  position: absolute;
+  top: -15px;
+  left: 95px;
+  content: "";
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+#menu ul, li, li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#menu li a {
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+}
+#menu li a:hover,
+#menu li a:focus {
+  background: #1ABC9C;
+  color: #fff;
+}
+
+
+
+}
+@media(max-height:400px)
+{
+	.bannerText .extra{
+		display:none;
+	}
+	.bannerText{
+		margin-top:30px;
+	}
+}
+.bannerText span{
+	z-index:+2;
+}
+@media(max-height:720px){
+	.ipflogo{
+		display:none;
+		
+	}
+	.nitcmun_logo{
+		display:none;
+	}
+	
+	.extra1{
+		display:none;
+	}
+}
+@media(max-width:1200px){
+	.ipflogo{
+		display:none;
+		
+	}
+	.nitcmun_logo{
+		display:none;
+	}
+	.extra1{
+		display:none;
+	}
+}
