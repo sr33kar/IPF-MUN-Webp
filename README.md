@@ -7,7 +7,7 @@ This is the portfolio that was set active at the time of registrations for NITCM
 
 -> This has nothing to do with viewer or user's details or entries.
 
--> No forms are presnt in this entire website.
+-> No forms are present in this entire website.
 
 -> There is a link present in almost all pages that lead to a registration portal which takes the details of the registrations.
 
